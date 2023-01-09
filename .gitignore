@@ -1,0 +1,8 @@
+docker-compose.yml
+Dockerfile-apache
+interbase/login.php
+interbase/conexion.php
+docker
+phpinfo.php
+
+.DS_Store

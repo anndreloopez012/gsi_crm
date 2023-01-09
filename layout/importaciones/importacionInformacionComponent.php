@@ -192,7 +192,7 @@
         var strSALDEXTD = $("#hid_SALDEXTD").val();
         var strGENERO = $("#hid_GENERO").val();
         var strESTCIVIL = $("#hid_ESTCIVIL").val();
-        var strNOMTRAB = $("#hid_NOMTRAB").val();
+        var strNUMTRANS = $("#hid_NUMTRANS").val();
         var strMONTOTOR = $("#hid_MONTOTOR").val();
         var strCAPATRAS = $("#hid_CAPATRAS").val();
         var strINTATRAS = $("#hid_INTATRAS").val();
@@ -283,7 +283,7 @@
         var strSALDEXTD_cod = $("#hid_SALDEXTD_cod").val();
         var strGENERO_cod = $("#hid_GENERO_cod").val();
         var strESTCIVIL_cod = $("#hid_ESTCIVIL_cod").val();
-        var strNOMTRAB_cod = $("#hid_NOMTRAB_cod").val();
+        var strNUMTRANS_cod = $("#hid_NUMTRANS_cod").val();
         var strMONTOTOR_cod = $("#hid_MONTOTOR_cod").val();
         var strCAPATRAS_cod = $("#hid_CAPATRAS_cod").val();
         var strINTATRAS_cod = $("#hid_INTATRAS_cod").val();
@@ -374,7 +374,7 @@
         var strSALDEXTD_ord = $("#hid_SALDEXTD_ord").val();
         var strGENERO_ord = $("#hid_GENERO_ord").val();
         var strESTCIVIL_ord = $("#hid_ESTCIVIL_ord").val();
-        var strNOMTRAB_ord = $("#hid_NOMTRAB_ord").val();
+        var strNUNTRANS_ord = $("#hid_NUMTRANS_ord").val();
         var strMONTOTOR_ord = $("#hid_MONTOTOR_ord").val();
         var strCAPATRAS_ord = $("#hid_CAPATRAS_ord").val();
         var strINTATRAS_ord = $("#hid_INTATRAS_ord").val();
@@ -564,9 +564,9 @@
         $("[name=ESTCIVIL]").prop('checked', boolCheck);
         $("#ord_ESTCIVIL").val(strESTCIVIL_ord);
 
-        var boolCheck = (strNOMTRAB == 1) ? true : false;
-        $("[name=NOMTRAB]").prop('checked', boolCheck);
-        $("#ord_NOMTRAB").val(strNOMTRAB_ord);
+        var boolCheck = (strNUMTRANS == 1) ? true : false;
+        $("[name=NUMTRANS]").prop('checked', boolCheck);
+        $("#ord_NUMTRANS").val(strNUNTRANS_ord);
 
         var boolCheck = (strMONTOTOR == 1) ? true : false;
         $("[name=MONTOTOR]").prop('checked', boolCheck);

@@ -14,7 +14,7 @@ function validarUsuario($usuario, $pass)
         $pass = str_replace("'", "''", $pass);
         $usuario = str_replace("'", "''", $usuario);
 
-        $conn_string = "host=localhost port=5432 dbname=gsi  user=admin_gsi  password=Andrelopez01 options='--client_encoding=UTF8'";
+        $conn_string = "host=wimog-gt.com port=5432 dbname=gsi  user=admin_gsi  password=Andrelopez01 options='--client_encoding=UTF8'";
         $link  = pg_connect($conn_string);
         if (!$link) {
             echo "Error: No se ha podido conectar a la base de datos\n";

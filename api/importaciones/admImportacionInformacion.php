@@ -41,7 +41,7 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
     $SALDEXTD = (isset($_POST["SALDEXTD"]) && $_POST["SALDEXTD"] != '') ? $_POST["SALDEXTD"] : 0;
     $GENERO = (isset($_POST["GENERO"]) && $_POST["GENERO"] != '') ? $_POST["GENERO"] : 0;
     $ESTCIVIL = (isset($_POST["ESTCIVIL"]) && $_POST["ESTCIVIL"] != '') ? $_POST["ESTCIVIL"] : 0;
-    $NOMTRAB = (isset($_POST["NOMTRAB"]) && $_POST["NOMTRAB"] != '') ? $_POST["NOMTRAB"] : 0;
+    $NUMTRANS = (isset($_POST["NUMTRANS"]) && $_POST["NUMTRANS"] != '') ? $_POST["NUMTRANS"] : 0;
     $MONTOTOR = (isset($_POST["MONTOTOR"]) && $_POST["MONTOTOR"] != '') ? $_POST["MONTOTOR"] : 0;
     $CAPATRAS = (isset($_POST["CAPATRAS"]) && $_POST["CAPATRAS"] != '') ? $_POST["CAPATRAS"] : 0;
     $INTATRAS = (isset($_POST["INTATRAS"]) && $_POST["INTATRAS"] != '') ? $_POST["INTATRAS"] : 0;
@@ -131,7 +131,7 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
     $SALDEXTD_ord = (isset($_POST["ord_SALDEXTD"]) && $_POST["ord_SALDEXTD"] != '') ? $_POST["ord_SALDEXTD"] : 0;
     $GENERO_ord = (isset($_POST["ord_GENERO"]) && $_POST["ord_GENERO"] != '') ? $_POST["ord_GENERO"] : 0;
     $ESTCIVIL_ord = (isset($_POST["ord_ESTCIVIL"]) && $_POST["ord_ESTCIVIL"] != '') ? $_POST["ord_ESTCIVIL"] : 0;
-    $NOMTRAB_ord = (isset($_POST["ord_NOMTRAB"]) && $_POST["ord_NOMTRAB"] != '') ? $_POST["ord_NOMTRAB"] : 0;
+    $NUMTRANS_ord = (isset($_POST["ord_NUMTRANS"]) && $_POST["ord_NUMTRANS"] != '') ? $_POST["ord_NUMTRANS"] : 0;
     $MONTOTOR_ord = (isset($_POST["ord_MONTOTOR"]) && $_POST["ord_MONTOTOR"] != '') ? $_POST["ord_MONTOTOR"] : 0;
     $CAPATRAS_ord = (isset($_POST["ord_CAPATRAS"]) && $_POST["ord_CAPATRAS"] != '') ? $_POST["ord_CAPATRAS"] : 0;
     $INTATRAS_ord = (isset($_POST["ord_INTATRAS"]) && $_POST["ord_INTATRAS"] != '') ? $_POST["ord_INTATRAS"] : 0;
@@ -221,7 +221,7 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
     $SALDEXTD_cod = (isset($_POST["cod_SALDEXTD"]) && $_POST["cod_SALDEXTD"] != '') ? $_POST["cod_SALDEXTD"] : 0;
     $GENERO_cod = (isset($_POST["cod_GENERO"]) && $_POST["cod_GENERO"] != '') ? $_POST["cod_GENERO"] : 0;
     $ESTCIVIL_cod = (isset($_POST["cod_ESTCIVIL"]) && $_POST["cod_ESTCIVIL"] != '') ? $_POST["cod_ESTCIVIL"] : 0;
-    $NOMTRAB_cod = (isset($_POST["cod_NOMTRAB"]) && $_POST["cod_NOMTRAB"] != '') ? $_POST["cod_NOMTRAB"] : 0;
+    $NUMTRANS_cod = (isset($_POST["cod_NUMTRANS"]) && $_POST["cod_NUMTRANS"] != '') ? $_POST["cod_NUMTRANS"] : 0;
     $MONTOTOR_cod = (isset($_POST["cod_MONTOTOR"]) && $_POST["cod_MONTOTOR"] != '') ? $_POST["cod_MONTOTOR"] : 0;
     $CAPATRAS_cod = (isset($_POST["cod_CAPATRAS"]) && $_POST["cod_CAPATRAS"] != '') ? $_POST["cod_CAPATRAS"] : 0;
     $INTATRAS_cod = (isset($_POST["cod_INTATRAS"]) && $_POST["cod_INTATRAS"] != '') ? $_POST["cod_INTATRAS"] : 0;
@@ -909,7 +909,7 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
         }
 
 
-        $var_consulta = "INSERT INTO PLANCARGA (CODIGO, CODIGOPLA, ORDEN, STATUS) VALUES ($NOMTRAB_cod, $NIU, $NOMTRAB_ord, $NOMTRAB);";
+        $var_consulta = "INSERT INTO PLANCARGA (CODIGO, CODIGOPLA, ORDEN, STATUS) VALUES ($NUMTRANS_cod, $NIU, $NUMTRANS_ord, $NUMTRANS);";
         
         $val = 33;
         $val = 1;
@@ -2031,7 +2031,7 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
         
 
 
-        $var_consulta = "UPDATE PLANCARGA SET ORDEN = $NOMTRAB_ord, STATUS = $NOMTRAB WHERE CODIGO = $NOMTRAB_cod AND CODIGOPLA = $CodePlantillaUpdate;";
+        $var_consulta = "UPDATE PLANCARGA SET ORDEN = $NUMTRANS_ord, STATUS = $NUMTRANS WHERE CODIGO = $NUMTRANS_cod AND CODIGOPLA = $CodePlantillaUpdate;";
         
         $val = 33;
         $val = 1;

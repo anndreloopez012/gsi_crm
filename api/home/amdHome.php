@@ -20,9 +20,7 @@ $var_consulta = pg_query($link, $var_consulta);
 }
 
 $arrMensaje = array();
-$var_consulta = "SELECT *
-         FROM MSMDIA
-         ORDER BY NIU";
+$var_consulta = "SELECT * FROM MSDIA ORDER BY NIU";
 
 $var_consulta = pg_query($link, $var_consulta);
     while ($rtmp = pg_fetch_assoc($var_consulta)) {

@@ -178,6 +178,9 @@ if ($usernameNum == 1) {
 }else if ($usernameNum == 6) {
     header("location: azteca.php?id=$numCaso&tn=$TN&gt=$gt&rt=$rt");
     exit;
+}else if ($usernameNum == 7) {
+    header("location: azteca.php?id=$numCaso&tn=$TN&gt=$gt&rt=$rt");
+    exit;
 }
 
 

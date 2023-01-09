@@ -3,7 +3,7 @@
 //$conn_string = "host=localhost port=5432 dbname=adgeco user=postgres password=Ad.2021* options='--client_encoding=UTF8'";
 //$conn_string = "host=localhost port=5431 dbname=database_adgeco user=postgres password=Ad.2021* options='--client_encoding=UTF8'";
 
-$conn_string = "host=localhost port=5432 dbname=gsi  user=admin_gsi  password=Andrelopez01 options='--client_encoding=UTF8'";
+$conn_string = "host=wimog-gt.com port=5432 dbname=gsi  user=admin_gsi  password=Andrelopez01 options='--client_encoding=UTF8'";
 
 
 //$conn_string = "host=localhost port=5432 dbname=adgeco_db user=postgres password=Ad.2021* options='--client_encoding=UTF8'";

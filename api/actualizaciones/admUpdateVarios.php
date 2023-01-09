@@ -121,7 +121,7 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
 
 
            $strCodiclie = $contactData[1];
-            $strCodiclie = str_replace(' ','',$strCodiclie);
+            //$strCodiclie = str_replace(' ','',$strCodiclie);
 
             $rsNIUU = pg_query("SELECT NUMTRANS FROM GC000001 WHERE trim(CODICLIE) = '$strCodiclie' AND NUMEMPRE = $empresa");
             if ($row = pg_fetch_row($rsNIUU)) {
@@ -129,16 +129,16 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
             }
             $NUMTRANS = isset($idRow0) ? $idRow0 : 0;
 
-            $rsNIU = pg_query("SELECT COUNT(NUMTRANS) FROM GC000001 WHERE trim(CODICLIE) = '$strCodiclie' AND NUMEMPRE = $empresa");
+            $rsNIU = pg_query("SELECT COUNT(NUMTRANS) FROM GC000001 WHERE CODICLIE = '$strCodiclie' AND NUMEMPRE = $empresa");
             if ($row = pg_fetch_row($rsNIU)) {
                 $idRow0 = trim($row[0]);
             }
             $bollExiste = isset($idRow0) ? $idRow0 : 0;
 
-            //$queryTest = "SELECT COUNT(NUMTRANS) FROM GC000001 WHERE trim(CODICLIE) = '$strCodiclie' AND NUMEMPRE = $empresa";
+            //$queryTest = "SELECT COUNT(NUMTRANS) FROM GC000001 WHERE CODICLIE = '$strCodiclie' AND NUMEMPRE = $empresa";
 
             //print_r('<br>    queryTest      '.$queryTest); 
-            //print_r('<br>    bollExiste      '.$bollExiste); 
+            print_r('<br>    bollExiste      '.$bollExiste); 
             if ($bollExiste >= 1) {
                 $var_consulta = "UPDATE gc000001 SET {$strCampos} org = 0 WHERE numtrans = '$NUMTRANS'";
                 
@@ -149,9 +149,9 @@ if (isset($_GET["validaciones"]) && !empty($_GET["validaciones"])) {
                     echo '0';
                     echo $var_consulta;
                 }
-                 //print $var_consulta.'<br>';
+                //print $var_consulta.'<br>';
             }
-           
+        
         }
 
         die();
